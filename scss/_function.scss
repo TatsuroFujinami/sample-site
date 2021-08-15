@@ -1,0 +1,73 @@
+$yellow: #FFF100;
+$brown: #B18147;
+$button: #FCDCA4;
+
+@mixin menu() {
+    h2 {
+        font-size: 40px;
+        border-bottom: 5px solid $brown;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .picAndText {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 90px;
+
+        .pic {
+            width: 50%;
+        }
+
+        .text {
+            width: 50%;
+            text-align: center;
+            line-height: 3rem;
+            margin-top: 70px;
+        }
+    }
+
+    .picAndText2 {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        margin-bottom: 90px;
+
+        .pic2 {
+            width: 50%;
+        }
+
+        .text2 {
+            width: 50%;
+            text-align: center;
+            line-height: 3rem;
+            margin-top: 70px;
+        }
+    }
+}
+
+@mixin image() {
+    height: 300px;
+    background-image: url(../img/cups.jpeg);
+    background-position-x: center;
+    background-position-y: center;
+    object-fit: contain;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin title() {
+    text-align: center;
+    line-height: 300px;
+    font-size: 72px;
+    color: $yellow;
+    font-weight: bold;
+}
+
+@mixin borderText() {
+    font-size: 40px;
+    border-bottom: 5px solid $brown;
+    display: inline-block;
+    margin-bottom: 20px;
+}
